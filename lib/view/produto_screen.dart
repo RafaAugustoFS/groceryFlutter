@@ -59,7 +59,32 @@ class ProdutoScreen extends StatelessWidget {
                   ),
                 ],
               ),
-
+              Divider(),
+              ExpansionTile(
+                title: Text('Product Detail'),
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(
+                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+                      style: TextStyle(fontSize: 16),
+                    ),
+                  ),
+                ],
+              ),
+              ExpansionTile(
+                title: Text('Nutrictions'),
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(
+                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+                      style: TextStyle(fontSize: 16),
+                    ),
+                  ),
+                ],
+              ),
+              Spacer(),
               ElevatedButton(
                 onPressed: () {
                   // Lógica para adicionar ao carrinho
@@ -68,7 +93,7 @@ class ProdutoScreen extends StatelessWidget {
                   minimumSize: Size(double.infinity, 50),
                   backgroundColor: Colors.green,
                 ),
-                child: Text('Adicionar ao carrinho'),
+                child: Text('Add to basket'),
               ),
             ],
           ),
