@@ -12,6 +12,9 @@ class ProdutoScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(
+          title: Text(produto.titulo),
+        ),
         body: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
